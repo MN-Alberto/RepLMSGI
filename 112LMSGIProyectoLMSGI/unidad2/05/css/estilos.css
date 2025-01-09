@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+}
+div>div>div {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    margin: 2px;
+    background-repeat: no-repeat;
+}
+
+/* Color dados al pasar por encima:*/
+div>div>div:hover {
+    background-color: green;
+}
+
+
+/* Color dados:*/
+div>div>div {
+    background-size: 25px;
+    background-color: lightgreen;
+}
+
+/* Fila 1:*/
+div>div:nth-child(1)>div {
+    background-image: url("../img/punto.png");
+    background-position: center, center;
+}
+
+/* Fila 2:*/
+div>div:nth-child(2)>div {
+    background-image: url("../img/punto.png"), url("../img/punto.png");
+    background-position: 10% 10%, 90% 90%;
+}
+
+/* Fila 3:*/
+div>div:nth-child(3)>div {
+    background-image: url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png");
+    background-position: 10% 10%, 50% 50%, 90% 90%;
+}
+
+/* Fila 4:*/
+div>div:nth-child(4)>div {
+    background-image: url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png");
+    background-position: 10% 10%, 90% 10%, 90% 90%, 10% 90%;
+}
+
+/* Fila 5:*/
+div>div:nth-child(5)>div {
+    background-image: url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png");
+    background-position: 10% 10%, 90% 10%, 50% 50%, 90% 90%, 10% 90%;
+}
+
+/* Fila 6:*/
+div>div:nth-child(6)>div {
+    background-image: url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png"),
+    url("../img/punto.png");
+    background-position: 10% 10%, 90% 10%, 10% 50%, 90% 50%, 90% 90%, 10% 90%;
+}
+footer{
+    text-align: center;
+}

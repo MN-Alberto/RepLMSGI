@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+<title>DAW112 Alberto Mendez Nuñez</title>
+<link>http://daw112.ieslossauces.es/</link>
+<description>Actualizaciones de mi página Web</description>
+<language>es-es</language>
+<pubDate>Fri, 13 Dec 2024 07:00:00 +0000</pubDate>
+<lastBuildDate>Sat, 14 Dec 2024 07:00:00 +0000</lastBuildDate>
+<category>Practicas</category>
+<copyright>Todos los derechos reservados a Alberto Méndez Núñez</copyright>
+<skipDays>
+        <day>Saturday</day>
+        <day>Sunday</day>
+    </skipDays>
+    <skipHours>
+        <hour>0</hour>
+        <hour>1</hour>
+        <hour>2</hour>
+        <hour>3</hour>
+        <hour>4</hour>
+        <hour>5</hour>
+        <hour>6</hour>
+        <hour>7</hour>
+    </skipHours>
+    <item>
+        <title>Indices</title>
+        <link>http://daw112.ieslossauces.es</link>
+        <description><![CDATA[<p><strong>Indice asignaturas</strong> Rehecho inspirado en la pagina web de Marvel</p>]]></description>
+        <pubDate>Fri, 13 Dec 2024 07:00:00 +0000</pubDate>
+        <enclosure url="http://daw112.ieslossauces.es/112LMSGIProyectoLMSGI/images/rss.png" type="image/png"/>
+        <category>Web</category>
+    </item>
+    <item>
+        <title>Practicas</title>
+        <link>http://daw112.ieslossauces.es</link>
+        <description><![CDATA[<p><strong>Fecha de actualizacion y validacion practicas</strong> Se ha añadido la fecha de ultima actualizacion en las practicas ademas de comprobar la validacion con el icono de W3S</p>]]></description>
+        <pubDate>Sat, 14 Dec 2024 07:00:00 +0000</pubDate>
+        <enclosure url="http://daw112.ieslossauces.es/112LMSGIProyectoLMSGI/images/rss.png" type="image/png"/>
+        <category>Web</category>
+    </item>
+</channel>
+</rss>

@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 1024px;
+    margin: 0 auto;    
+}
+ul{
+    list-style: none;
+    text-align: center;
+    
+}
+li{
+    display: inline;
+    padding: 5pt;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+td:hover{
+    background-color:  #d5dbdb ;
+}
+div{
+    text-align: center;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+h2{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2980b9;
+}
+#titulo{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    position: fixed;
+    bottom: 0;
+    right:0;
+}
+ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    position:-webkit-sticky;
+    top:0;
+    background-color: aqua;
+}
+section{
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: #134678;
+    
+}
+fieldset{
+    font-size: large;
+    color: black;
+}
+tr{
+    height: 2em;
+}
+td {
+    background-color: #ecf0f1;
+}
+ 
+th {
+    color:white;
+    background-color: #2980b9;
+}
+article{
+    margin-bottom: 15px;
+    border: 3px solid;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #134678;
+
+}
+p{
+    text-align: center;
+}
+header {
+    background-color: #134678;
+}
+td[colspan="5"] {
+    background-color: #f39c12;
+}
+footer:nth-last-child(2){
+    background-color:#134678 ;
+    border-radius: 10px;
+}
+h2{
+    color:#2980b9;
+}
+h3{
+    color:white;
+    text-align: center;
+}
+footer td{
+    color:#2980b9;
+}
+p{
+    color:black;
+}
+i{
+    display: block;
+}
+#id1{
+    position: absolute;
+    top: 12em;
+    z-index: 1;
+    background-color: rgb(0, 255, 234);
+    width: 1000px;
+}
+#id2{
+    position: absolute;
+   top:14em;
+   z-index: 2;
+   background-color: rgb(225, 0, 255);
+   width: 1000px;
+}
+#id3{
+    position: absolute;
+    top: 16em;
+    z-index: 3;
+    background-color: rgb(255, 251, 0);
+    width: 1000px;
+}
+#id4{
+    position: absolute;
+   top: 18em;
+   z-index: 4;
+   background-color: rgb(255, 136, 0);
+   width: 1000px;
+}
+#id5{
+    position: absolute;
+    top: 20em;
+    z-index: 5;
+    background-color: rgb(179, 255, 0);
+    width: 1000px;
+}
+#id6{
+    position: absolute;
+   top: 22em;
+   z-index: 6;
+   background-color: rgb(0, 26, 255);
+   width: 1000px;
+}
+#id7{
+    position: absolute;
+   top: 24em;
+   z-index: 7;
+   background-color: rgb(35, 122, 0) ;
+   width: 1000px;
+}
+#id8{
+    position: absolute;
+   top: 26em;
+   z-index: 8;
+   background-color: #dd0000;
+   width: 1000px;
+}
+#id1:hover{
+    z-index: 10;
+    height: 400px;
+}
+#id1:hover table{
+    margin-top: 20%;  
+  }
+#id1:hover footer{
+    justify-content: end;
+   text-align: center;  
+   margin-top:15%;
+ }
+#id2:hover{
+    z-index: 10;
+    height: 400px;
+ }
+#id2:hover table{
+    margin-top: 20%;  
+  }
+#id2:hover footer{
+    justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id3:hover{
+    z-index: 10;
+    height: 400px;
+}
+#id3:hover table{
+    margin-top: 20%;  
+}
+#id3:hover footer{
+    justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id4:hover{
+    z-index: 10;
+    height: 400px;
+}
+#id4:hover table{
+    margin-top: 20%;  
+}
+#id4:hover footer{
+    justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id5:hover{
+    z-index: 10;
+    height: 400px;
+}
+#id5:hover table{
+    margin-top: 20%;  
+}
+#id5:hover footer{
+     justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id6:hover{
+    z-index: 10;
+    height: 400px;
+}
+ #id6:hover table{
+    margin-top: 20%;  
+}
+#id6:hover footer{
+     justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id7:hover{
+    z-index: 10;
+    height: 400px;
+}
+ #id7:hover table{
+    margin-top: 20%;  
+}
+  #id7:hover footer{
+     justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id8:hover{
+    z-index: 10;
+    height: 400px;
+}
+#id8:hover table{
+    margin-top: 20%;  
+}
+#id8:hover footer{
+     justify-content: end;
+    text-align: center;  
+    margin-top:15%;
+}
+#id10{
+    margin-top: 180px;
+}

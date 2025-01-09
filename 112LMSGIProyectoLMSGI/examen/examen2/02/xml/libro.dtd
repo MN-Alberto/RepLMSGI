@@ -1,0 +1,6 @@
+<!ELEMENT libro (Autor,Genero,Subgenero,TituloOriginal)>
+<!ELEMENT Autor (#PCDATA)>
+<!ELEMENT TituloOriginal (#PCDATA)>
+<!ATTLIST Genero CDATA #IMPLIED>
+<!ATTLIST Subgenero CDATA #IMPLIED>
+<!ATTLIST libro ref IDREF #IMPLIED>

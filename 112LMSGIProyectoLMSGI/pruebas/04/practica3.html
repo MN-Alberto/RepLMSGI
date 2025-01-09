@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="GET" action="#alta.php">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+            <div class="nombre">
+                <label for="nombre"><i>Nombre:</i></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre"/>
+            </div>
+            <br>
+            <div class="apellidos"></div>
+                <label for="apellidos"><i>Apellidos:</i></label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos"/>
+            </div>
+            <hr>
+            <div class="email"></div>
+                <label for="email"><i>Email:</i></label>
+                <input type="email" name="email" id="email"/>
+            </div>
+            <hr>
+            <div class="sexo">
+                <p>Sexo:</p>
+                <p><input type="radio" id="idHombre" name="sexo">
+                <label for="idHombre">Hombre</label></p>
+                <p><input type="radio" id="idMujer" name="Sexo">
+                <label for="idMujer">Mujer</label></p>
+            </div>
+        </fieldset>
+
+        </form>
+</body>
+</html>

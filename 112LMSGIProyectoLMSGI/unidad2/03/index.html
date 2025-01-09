@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ud2.03 Alberto Méndez Núñez</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <style>
+        *{
+        cursor: url(img/mano2.png),auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FORMULARIO SPIDER-MAN</h1>
+    </header>
+    <form method="GET" action="#alta.php">
+        <fieldset>
+            <legend>DATOS DEL USUARIO</legend>
+            <div class="nombre">
+                <label for="nombre"><i>Nombre:</i></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+            </div>
+            <br>
+            <div class="apellidos">
+                <label for="apellidos"><i>Apellidos:</i></label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+            </div>
+            <hr>
+            <div class="email">
+                <label for="email"><i>Email:</i></label>
+                <input type="email" name="email" id="email" required placeholder="ejemplo@gmail.com">
+            </div>
+            <hr>
+            <div class="telefono">
+                <label for="telefono"><i>Teléfono:</i></label>
+                <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                    placeholder="XXX-XX-XX-XX">
+            </div>
+            <hr>
+            <div class="date">
+                <label for="date"><i>Fecha:</i></label>
+                <input type="date" name="date" id="date" min="2000-01-01" max="2030-12-31" value="2024-06-15">
+            </div>
+            <hr>
+            <div class="time">
+                <label for="time"><i>Hora:</i></label>
+                <input type="time" name="time" id="time" min="06:00" max="00:00">
+            </div>
+            <hr>
+            <div class="week">
+                <label for="week"><i>Selecciona una semana:</i></label>
+                <input type="week" name="week" id="week">
+            </div>
+            <hr>
+            <div class="month">
+                <label for="month"><i>Selecciona un mes:</i></label>
+                <input type="month" name="month" id="month">
+            </div>
+            <hr>
+            <div class="sexo">
+                <p>Sexo:</p>
+                <p><input type="radio" id="idHombre" name="sexo">
+                    <label for="idHombre">Hombre</label>
+                </p>
+                <p><input type="radio" id="idMujer" name="sexo">
+                    <label for="idMujer">Mujer</label>
+                </p>
+            </div>
+        </fieldset>
+        <!--
+        Aquí termina la primera parte del formulario. "Datos personales".
+        -->
+        <fieldset>
+            <legend>FORMULARIO</legend>
+            <div class="range">
+                <label for="range"><i>Cuanto te gusta spiderman:</i></label>
+                <input type="range" name="range" id="range" min="0" max="10" value="5">
+            </div>
+            <hr>
+            <div class="checkbox1">
+                <label for="checkbox1"><i>¿Qué videojuegos de spiderman te gustan más?</i></label>
+            </div>
+            <div class="checkbox2">
+                <label for="checkbox1"><i>Spider-Man (2018)</i></label>
+                <input type="checkbox" name="checkbox1" id="checkbox1" value="1" checked>
+            </div>
+            <div class="checkbox3">
+                <label for="checkbox2"><i>Spider-Man Miles Morales</i></label>
+                <input type="checkbox" name="checkbox2" id="checkbox2" value="2">
+            </div>
+            <div class="checkbox4">
+                <label for="checkbox3"><i>Spider-Man 2</i></label>
+                <input type="checkbox" name="checkbox3" id="checkbox3" value="3">
+            </div>
+            <div class="checkbox5">
+                <label for="checkbox4"><i>The Amazing Spider-Man</i></label>
+                <input type="checkbox" name="checkbox4" id="checkbox4" value="4">
+            </div>
+            <hr>
+            <div class="area">
+                <label><i>Escribe lo que añadirías en el nuevo videojuego de Spider-Man:</i></label>
+                <br>
+                <textarea name="message" style="width:200px; height:80px;" placeholder="Escribe aquí..."></textarea>
+    
+            </div>
+            <hr>
+              <div class="lista">
+                <label for="lista"><i>Selecciona tu personaje favorito de Spider-Man 2:</i></label>
+                <select id="lista" name="lista">
+                    <option value="Venom">Venom</option>
+                    <option value="Peater">Peater Parker</option>
+                    <option value="Miles">Miles Morales</option>
+                    <option value="Mary J">Mary Jane Watson</option>
+                 </select>
+            </div>
+            <hr>
+            <div class="imagen">
+                <label for="image"><i>Imagen sacada de "Spider-Man 2:"</i></label><br>
+                <input type="image" id="image" src="img/spider.jpg" alt="imagen" width="340" height="250">
+            </div>
+            <hr>
+            <div class="hidden">
+                <input type="hidden" name="usuario" value="1">
+            </div>
+            <div class="search">
+                <label for="search"><i>Buscar:</i></label>
+                <input type="search" id="search" name="search" placeholder="Busca aquí...">
+            </div>
+            <hr>
+            <div class="url">
+                <label for="url"><i>Introduce tu página web favorita (Relacionada con Spider-Man):</i></label>
+                <input type="url" id="url" name="url">
+            </div>
+            <hr>
+            <div class="number">
+                <label for="number"><i>¿Cuanto te gustaría tener los poderes de Spider-Man?</i></label>
+                <input type="number" id="number" name="number" min="1" max="10" step="1" value="5">
+            </div>
+            <hr>
+            <div class="file">
+                <label for="file"><i>Sube tu foto favorita de Spider-Man</i></label>
+                <input type="file" id="file" name="file">
+            </div>
+            <hr>
+            <div class="color">
+                <label for="color"><i>¿De que color te gustaría que fuera el traje de Spider-Man?</i></label>
+                <input type="color" id="color" name="color">
+            </div>
+            <hr>
+                  <!--
+                Botones "Enviar" y "Reiniciar"
+                -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </fieldset>
+    </form>
+    <footer>
+        <p>"2024-25 IES LOS SAUCES. ©Todos los derechos reservados.<a href="../../index.html">Alberto Mendez Nuñez</a>"</p>
+        <p>Fecha de ultima actualización:</p>
+        <time datetime="2024-12-13">13-12-2024</time>
+        <a href="https://validator.w3.org/check?uri=https://daw112.ieslossauces.es/112LMSGIProyectoLMSGI/unidad2/03/index.html"> <img src="/images/w3s.png" width="90" height="40" alt="validator"></a>
+    </footer>
+</body>
+
+</html>
+<!--
+    Autor: Alberto Méndez
+    Fecha Modificación: 17/10/2024
+    Descripción: Hoy he terminado de añadir los campos del formulario, además le he puesto un 
+    poco de css para mejorar la presentación.
+    -->

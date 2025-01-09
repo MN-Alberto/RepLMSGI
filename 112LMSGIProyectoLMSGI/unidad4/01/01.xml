@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Nombre: Alberto Méndez Núñez
+    Descripcion: Información de un mail-->
+<!DOCTYPE mail [
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatarios (destinatario+)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT fechamensaje (dia, mes, anio)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT p (#PCDATA)>
+    <!ELEMENT h1 (#PCDATA)>
+    <!ELEMENT h2 (#PCDATA)>
+    <!ELEMENT h3 (#PCDATA)>
+    <!ELEMENT h4 (#PCDATA)>
+    <!ELEMENT strong (#PCDATA)>
+    <!ELEMENT ul (li+)>
+    <!ELEMENT li (#PCDATA|strong)*>
+    <!ELEMENT mensaje (#PCDATA| h2| h3| p| strong | ul)*>
+    <!ELEMENT ficherosadjuntos (fichero+)>
+    <!ELEMENT fichero (nombrefichero, tipo_mime)>
+    <!ELEMENT nombrefichero (#PCDATA)>
+    <!ELEMENT tipo_mime (#PCDATA)>
+    <!ELEMENT mail (remitente, destinatarios, fechamensaje, asunto, mensaje, ficherosadjuntos)>
+]>
+    <mail>
+        <remitente>pepe@gmail.com</remitente>
+        <destinatarios>
+             <destinatario>maria@gmail.com</destinatario>
+            <destinatario>sofía@gmail.com</destinatario>
+            </destinatarios>
+            <fechamensaje> 
+            <dia>25</dia>
+            <mes>11</mes> 
+             <anio>2024</anio> 
+            </fechamensaje>
+            <asunto>Cena de navidad 2024 </asunto>
+             <mensaje> 
+            <h3>Invitación a la Cena de Navidad</h3>
+             <p>Querido/a compañero/a:
+                Nos complace invitarte a compartir una noche especial en nuestra</p><strong>Cena de Navidad</strong> 
+                <p>, que se celebrará en el encantador</p> <strong>Parador de Benavente.</strong>
+                <h2>Detalles del evento:</h2>
+                 <ul>
+                <li><strong>Fecha:</strong>Jueves, 21 de diciembre de 2023</li>
+                <li><strong>Hora::</strong>21:00</li>
+                <li><strong>Lugar::</strong> Parador de Benavente</li>
+                    </ul>
+                 <p>Ven a disfrutar de una velada inolvidable llena de buena compañía, deliciosa gastronomía 
+                 y el espiritu navider que tanto nos une.</p><p>Habremos preparado un menú especial pensado 
+                 para celebrar esta mágica ocasión.</p>
+                 <p>Por favor,</p><strong>confirma tu asistencia antes del 15 de diciembre de 2023</strong>
+                <p>respondiendo a este correo o contactando al</p> <strong> [teléfono/email de contacto].</strong>
+                <p>Esperamos contar contigo para hacer de esta cena un momento aún más especial. ¡No faltes!</p>
+                 <p>Con cariño</p>
+                <h3>El Director</h3>
+             </mensaje>
+            <ficherosadjuntos>
+                 <fichero>
+                    <nombrefichero>archivo="imagen.jpeg"</nombrefichero>
+                     <tipo_mime>image/jpeg</tipo_mime>
+                    </fichero>
+                    <fichero>
+                <nombrefichero>documento.pdf</nombrefichero>
+                <tipo_mime>application/pdf</tipo_mime>
+            </fichero>
+        </ficherosadjuntos>
+        </mail>  

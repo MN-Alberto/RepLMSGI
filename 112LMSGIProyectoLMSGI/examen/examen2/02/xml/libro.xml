@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "libro.dtd">
+<!--
+  Alberto Méndez Núñez
+-->
+    <libro>
+        <Autor>Susanze Collins</Autor>
+        <Genero>Novela</Genero>
+        <Subgenero>Ciencia ficción, aventura, juvenil</Subgenero>
+        <TiruloOriginal>The Hunger games</TiruloOriginal>
+    </libro>

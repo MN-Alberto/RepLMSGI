@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Nombre: Alberto Méndez Núñez
+    Descripcion: Información de un libro-->
+<!DOCTYPE biblioteca SYSTEM "02.dtd">
+<biblioteca>
+    <libro idlibro="libro1" genero="novela" ref="libro1">
+        <titulo>Puntos para los locos</titulo>
+            <autores>
+                <autor>
+                    <nombre>Angel</nombre>
+                        <apellido>Martin</apellido>
+                        <nacionalidad>Español</nacionalidad>
+                </autor>
+            </autores>
+        <anio>2024</anio>
+    </libro>
+    <libro idlibro="libro2" genero="novela" ref="libro2">
+        <titulo>Por si las voces vuelven</titulo>
+            <autores>
+                <autor>
+                    <nombre>Angel</nombre>
+                        <apellido>Martin</apellido>
+                        <nacionalidad>Español</nacionalidad>
+                </autor>
+            </autores>
+        <anio>2020</anio>
+    </libro>
+</biblioteca>
