@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/universidad"
+    xmlns="http://www.example.com/universidad"
+    xmlns:alumno="http://www.example.com/alumnos"
+    xmlns:asignaturas="http://www.example.com/asignaturas"
+    xmlns:carreras="http://www.example.com/carreras" elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.example.com/alumnos" schemaLocation="alumno.xsd"/>
+    <xs:import namespace="http://www.example.com/asignaturas" schemaLocation="asignaturas.xsd"/>
+    <xs:import namespace="http://www.example.com/carreras" schemaLocation="carreras.xsd"/>
+    <xs:element name="universidad">
+    <xs:complexType>
+    <xs:sequence>
+    <xs:element name="nombre">
+    <xs:complexType>
+    <xs:simpleContent>
+    <xs:extension base="xs:string">
+    <xs:attribute name="year">
+    <xs:simpleType>
+    <xs:restriction base="xs:gYear">
+    <xs:maxInclusive value="1900"/>
+    <xs:maxExclusive value="2500"/>
+    </xs:restriction>
+    </xs:simpleType>
+    </xs:attribute>
+    </xs:extension>
+    </xs:simpleContent>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="fechaconstruccion" type="xs:date"/>
+    <xs:element name="pais" type="xs:string"/>
+    <xs:element ref="carreras:carreras"/>
+    <xs:element ref="asignaturas:asignaturas"/>
+    <xs:element ref="alumno:alumnos"/>
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>

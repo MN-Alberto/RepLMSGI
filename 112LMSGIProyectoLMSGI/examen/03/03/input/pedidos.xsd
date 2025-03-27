@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tractor" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="componente">
+                                <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fechaEntrega">
+                                        <xs:complexType>
+                                            <xs:attribute name="mes" type="xs:int" use="required"/>
+                                            <xs:attribute name="anio" type="xs:gYear" use="required"/>
+                                            <xs:attribute name="dia" type="xs:gDay" use="optional"/>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="fragil" minOccurs="0"/>
+                                    <xs:element name="peso"/>
+                                </xs:sequence>
+                                    <xs:attribute name="referencia">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[A-Z0-9]{10}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="fechaEntrega" type="xs:date" use="optional">
+                                    </xs:attribute>
+                                <xs:attribute name="peso">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="kg"/>
+                                            <xs:enumeration value="g"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="numeroSerie" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="codigoFabricante" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:ID">
+                        <xs:pattern value="[F]\d{3}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>        
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="idPedido" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:ID">
+                <xs:pattern value="[P]\d{3}"/>
+               </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="fecha" type="xs:date" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    </xs:schema>
